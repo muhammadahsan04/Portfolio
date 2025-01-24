@@ -17,8 +17,10 @@ module.exports = {
       },
       screens: {
         xs: "450px",
+        gg: "400px",
         "max-lg": { max: "1093px" },
         "max-md": { max: "915px" },
+        // "max-sm": { max: "466px" },
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
