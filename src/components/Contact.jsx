@@ -24,8 +24,14 @@ const Contact = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
 
+    // Check if any field is empty
+    if (!form.name || !form.email || !form.message) {
+      toast.error("Please fill all the fields.");
+      return;
+    }
+
+    setLoading(true);
     emailjs
       .send(
         "service_w86xmuh",
@@ -57,16 +63,16 @@ const Contact = () => {
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={fadeIn("left", "tween", 0.2, 1)}
-        className="flex-[0.80] bg-black-100 p-8 rounded-2xl "
+        className="flex-[0.80] h-fit bg-black-100 p-8 rounded-2xl "
       >
-        <p className={`${styles.sectionSubText}`}>Get in touch</p>
-        <p className={`${styles.sectionHeadText}`}>Contact.</p>
+        <p className={`${styles.sectionSubText} !text-[15px]`}>Get in touch</p>
+        <p className={`${styles.sectionHeadText} !text-[45px]`}>Contact.</p>
 
         <form
           action=""
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-8 flex flex-col gap-8"
         >
           <label className="flex flex-col ">
             <span className="text-white font-medium mb-4">Your Name</span>
@@ -93,7 +99,7 @@ const Contact = () => {
           <label className="flex flex-col ">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
-              rows={7}
+              rows={4}
               name="message"
               value={form.message}
               onChange={handleChange}

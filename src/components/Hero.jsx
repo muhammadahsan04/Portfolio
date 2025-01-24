@@ -1,11 +1,68 @@
+// import { motion } from "framer-motion";
+// import React from "react";
+// import { ComputersCanvas } from "./canvas";
+// import { styles } from "../styles";
+
+// const Hero = () => {
+//   return (
+//     <section className="relative w-full h-screen mx-auto">
+//       <div
+//         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+//       >
+//         <div className="flex flex-col justify-center items-center mt-5">
+//           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+//           <div className="w-1 sm:h-80 h-40 violet-gradient" />
+//         </div>
+
+//         <div>
+//           <h1 className={`${styles.heroHeadText} text-white`}>
+//             Hi, I'm <span className="text-[#915eff]">Ahsan</span>
+//           </h1>
+//           <p
+//             className={`${styles.heroSubText} !leading-6 !text-[17px] mt-2 text-white-100`}
+//           >
+//             A creative frontend developer
+//             <br className="sm:block hidden" />
+//             passionate about designing and building
+//             <br className="sm:block hidden" /> user-friendly websites and
+//             applications.
+//           </p>
+//         </div>
+//       </div>
+//       {/* <ComputersCanvas /> */}
+
+//       <div className="absolute xs:bottom-3 bottom-20 w-full flex justify-center items-center">
+//         <a href="#about">
+//           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center item-start p-2">
+//             <motion.dev
+//               animate={{
+//                 y: [0, 24, 0],
+//               }}
+//               transition={{
+//                 duration: 1.5,
+//                 repeat: Infinity,
+//                 repeatType: "loop",
+//               }}
+//               className="w-3 h-3 rounded-full bg-secondary mb-1"
+//             />
+//           </div>
+//         </a>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Hero;
+
 import { motion } from "framer-motion";
 import React from "react";
-import { ComputersCanvas } from "./canvas";
 import { styles } from "../styles";
+import profilepic from "../../src/assets/pic.png";
+
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto max-md:mb-[80px]">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -14,26 +71,57 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Ahsan</span>
-          </h1>
-          <p
-            className={`${styles.heroSubText} !leading-6 !text-[17px] mt-2 text-white-100`}
-          >
-            A creative frontend developer
-            <br className="sm:block hidden" />
-            passionate about designing and building
-            <br className="sm:block hidden" /> user-friendly websites and
-            applications.
-          </p>
+        <div className="flex justify-between max-md:flex-col max-md:gap-20 max-lg:justify-around w-full flex-wrap  lg:flex-row">
+          <div className="border-white flex flex-1 flex-col">
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm <span className="text-[#915eff]">Ahsan</span>
+            </h1>
+            <p
+              className={`${styles.heroSubText} !leading-6 !text-[17px] mt-2 text-white-100`}
+            >
+              A creative frontend developer
+              <br className="sm:block hidden" />
+              passionate about designing and building
+              <br className="sm:block hidden" /> user-friendly websites and
+              applications.
+            </p>
+            <div className="flex gap-3 mt-12">
+              <button
+                type="submit"
+                className="hover:bg-[#1e1746] bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl transition-all duration-300 ease-in-out"
+              >
+                <a href="../../public/Ahsan.pdf" download="Ahsan_Resume.pdf">
+                  Resume
+                </a>
+              </button>
+              <button
+                type="submit"
+                className="hover:bg-[#1e1746] bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl transition-all duration-300 ease-in-out"
+              >
+                <a href="#contact">Hire me</a>
+              </button>
+            </div>
+          </div>
+
+          <div className="relative flex justify-center items-center h-[360px] w-[360px] bg-gradient-to-r from-[#1e1746] to-[#151030] rounded-full shadow-lg shadow-[#915eff]/30">
+            {/* Decorative Animated Rings */}
+            <div className="absolute h-full w-full rounded-full bg-gradient-to-r from-[#915eff]/40 to-[#1e1746]/10 animate-pulse" />
+            <div className="absolute h-[300px] w-[300px] rounded-full border-2 border-[#915eff]/50 blur-lg" />
+
+            {/* Profile Image */}
+            <img
+              src={profilepic}
+              alt="Profile"
+              className="z-10 rounded-full w-[320px] h-[320px] max-md:w-[220px] max-md:h-[220px] object-contain shadow-[#915eff]"
+            />
+          </div>
         </div>
       </div>
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
-      <div className="absolute xs:bottom-3 bottom-20 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-3 bottom-20 w-full flex justify-center items-center z-10">
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center item-start p-2">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-white flex justify-center item-start p-2">
             <motion.dev
               animate={{
                 y: [0, 24, 0],
@@ -43,7 +131,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
+              className="w-3 h-3 rounded-full bg-white mb-1"
             />
           </div>
         </a>

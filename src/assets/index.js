@@ -20,16 +20,16 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import next from "./tech/next.png";
 
 import htmlcssjs from "./company/htmlcssjs.png";
-import next from "./company/nextjs.png";
 import react from "./company/reactjs.png";
-import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
+import nike from "./nike.png";
+import brainwave from "./brainwave.png";
+import lms from "./lms.png";
+import demo from "./demo.jpg";
 export {
   logo,
   backend,
@@ -52,10 +52,11 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
-  jobit,
-  htmlcssjs,
+  brainwave,
+  lms,
   next,
+  nike,
+  htmlcssjs,
   react,
-  tripguide,
+  demo,
 };

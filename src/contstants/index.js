@@ -4,6 +4,7 @@ import {
   creator,
   web,
   javascript,
+  nike,
   // typescript,
   html,
   css,
@@ -16,12 +17,14 @@ import {
   // figma,
   // docker,
   htmlcssjs,
-  next,
+  // next,
   react,
-  carrent,
-  jobit,
-  tripguide,
+  brainwave,
+  next,
+  // jobit,
+  // tripguide,
   threejs,
+  lms,
 } from "../assets";
 
 export const navLinks = [
@@ -71,10 +74,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
+  {
+    name: "Next",
+    icon: next,
+  },
   {
     name: "React JS",
     icon: reactjs,
@@ -229,12 +232,52 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Brainwave",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
         name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "framer motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: brainwave,
+    live_link: "https://brainwave-six-hazel.vercel.app/",
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Nike",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nike,
+    live_link: "https://nike-chi-blond.vercel.app/",
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Lms",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
@@ -245,50 +288,13 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "redux",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
+    image: lms,
+    live_link: "https://lms-e-learning-client.vercel.app",
     source_code_link: "https://github.com/",
   },
 ];
