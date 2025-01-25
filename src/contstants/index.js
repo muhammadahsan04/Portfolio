@@ -203,29 +203,56 @@ const experiences = [
   },
 ];
 
+// const testimonials = [
+//   {
+//     testimonial:
+//       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+//     name: "Sara Lee",
+//     designation: "CFO",
+//     company: "XYZ",
+//     image: "https://randomuser.me/api/portraits/women/4.jpg",
+//   },
+//   {
+//     testimonial:
+//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
+//     name: "Chris Brown",
+//     designation: "COO",
+//     company: "XYZ",
+//     image: "https://randomuser.me/api/portraits/men/5.jpg",
+//   },
+//   {
+//     testimonial:
+//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+//     name: "Lisa Wang",
+//     designation: "CTO",
+//     company: "XYZ",
+//     image: "https://randomuser.me/api/portraits/women/6.jpg",
+//   },
+// ];
+
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus, eros in cursus facilisis, nulla massa posuere metus, non sodales justo est eget enim.",
     name: "Sara Lee",
     designation: "CFO",
-    company: "Acme Co",
+    company: "XYZ",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor ligula nec feugiat bibendum. Suspendisse potenti. Praesent vel urna nec magna tempus tincidunt.",
     name: "Chris Brown",
     designation: "COO",
-    company: "DEF Corp",
+    company: "XYZ",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat lacus non magna convallis, vitae vehicula libero eleifend. Fusce gravida augue id ligula tincidunt interdum.",
     name: "Lisa Wang",
     designation: "CTO",
-    company: "456 Enterprises",
+    company: "XYZ",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
