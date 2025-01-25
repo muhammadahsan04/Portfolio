@@ -65,10 +65,9 @@
 //       <div
 //         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 `}
 //       >
-       
 
 //         <div className="flex justify-between max-md:flex-col max-md:gap-8 max-lg:justify-around w-full flex-wrap  lg:flex-row max-md:items-center">
-         
+
 //        <div className="flex">
 //        <div className="flex flex-col justify-start items-center mt-5 mr-2">
 //           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
@@ -146,10 +145,6 @@
 
 // export default Hero;
 
-
-
-
-
 import { motion } from "framer-motion";
 import React from "react";
 // import { ChevronDown } from "lucide-react"; // Importing the arrow icon
@@ -176,11 +171,11 @@ const Hero = () => {
               <p
                 className={`${styles.heroSubText} !leading-6 mt-2 text-white-100`}
               >
-                A creative frontend developer
+                A creative frontend developer passionate&nbsp;
                 <br className="sm:block hidden" />
-                passionate about designing and building
-                <br className="sm:block hidden" /> user-friendly websites and
-                applications.
+                about designing and building
+                <br className="sm:block hidden" />
+                user-friendly websites and applications.
               </p>
               <div className="flex gap-3 mt-12">
                 <button
@@ -210,7 +205,7 @@ const Hero = () => {
             <img
               src={profilepic}
               alt="Profile"
-              className="z-10 rounded-full w-[320px] h-[320px] max-md:w-[220px] max-md:h-[220px] object-contain shadow-[#915eff] border"
+              className="z-10 rounded-full w-[320px] h-[320px] max-md:w-[220px] max-md:h-[220px] object-contain shadow-[#915eff]"
             />
           </div>
         </div>
