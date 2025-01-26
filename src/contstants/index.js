@@ -177,8 +177,8 @@ const experiences = [
     icon: htmlcssjs,
     points: [
       "Designed and developed responsive web pages using HTML5, CSS3, and JavaScript.",
-      "Utilized modern CSS techniques like Flexbox and Grid to create flexible layouts.",
-      "Ensured cross-browser compatibility and optimized code for fast loading times.",
+      "Utilized modern CSS techniques like Flexbox and Grid to create flexible layout.",
+      "Ensured cross-browser compatibility and optimized code for fast loading time.",
     ],
   },
   {
