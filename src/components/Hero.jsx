@@ -392,7 +392,7 @@ const Hero = () => {
                   type="submit"
                   className="hover:bg-[#1e1746] bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl transition-all duration-300 ease-in-out xs:text-[14px] text-[11px]"
                 >
-                  <a href="../../public/Ahsan.pdf" download="Ahsan_Resume.pdf">
+                  <a href="/Ahsan.pdf" download="Ahsan_Resume.pdf">
                     Resume
                   </a>
                 </button>
