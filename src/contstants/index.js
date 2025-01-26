@@ -193,7 +193,7 @@ const experiences = [
   },
   {
     title: "Next.js + Tailwind",
-    iconBg: "#E6DEDD",
+    iconBg: "#918381",
     icon: next,
     points: [
       "Built dynamic and SEO-friendly web applications using Next.js and styled with Tailwind CSS.",
