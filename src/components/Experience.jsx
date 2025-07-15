@@ -61,7 +61,7 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "experience");
 {
   /* <p className={`${styles.sectionSubText}`}>Introduction</p>
         <h2 className={`${styles.sectionHeadText}`}>Overivew</h2> */

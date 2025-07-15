@@ -25,12 +25,25 @@ import {
   // tripguide,
   threejs,
   lms,
+  cloudLab
 } from "../assets";
 
 export const navLinks = [
   {
+    id: "home",
+    title: "Home",
+  },
+  {
     id: "about",
     title: "About",
+  },
+  // {
+  //   id: "overview",
+  //   title: "Overview",
+  // },
+  {
+    id: "experience",
+    title: "Experience",
   },
   {
     id: "work",
@@ -172,6 +185,17 @@ const technologies = [
 // ];
 const experiences = [
   {
+    title: "Cloud Lab Private Ltd",
+    iconBg: "#ffffff",
+    icon: cloudLab,
+    points: [
+      "Worked as a Junior Frontend Developer on a custom jewelry store software project for a client using React and Redux.",
+      "Implemented role-based access control using roles and policies to define user permissions for CRUD operations.",
+      "Ensured a smooth user experience by managing state efficiently with Redux and building intuitive UI components.",
+    ],
+
+  },
+  {
     title: "HTML, CSS, JS",
     iconBg: "#383E56",
     icon: htmlcssjs,
@@ -201,6 +225,7 @@ const experiences = [
       "Collaborated with designers to implement responsive layouts with Tailwind's utility-first CSS approach.",
     ],
   },
+
 ];
 
 // const testimonials = [
@@ -281,24 +306,6 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Nike",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: nike,
-    live_link: "https://nike-chi-blond.vercel.app/",
-    source_code_link: "https://github.com/",
-  },
-  {
     name: "Lms",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -322,6 +329,24 @@ const projects = [
     ],
     image: lms,
     live_link: "https://lms-e-learning-client.vercel.app",
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Nike",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nike,
+    live_link: "https://nike-chi-blond.vercel.app/",
     source_code_link: "https://github.com/",
   },
 ];

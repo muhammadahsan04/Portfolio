@@ -23,6 +23,7 @@ import threejs from "./tech/threejs.svg";
 import next from "./tech/next.png";
 
 import htmlcssjs from "./company/htmlcssjs.png";
+import cloudLab from "./company/cloudLab.png";
 import react from "./company/reactjs.png";
 
 
@@ -59,4 +60,5 @@ export {
   htmlcssjs,
   react,
   demo,
+  cloudLab
 };

@@ -118,12 +118,46 @@ const Contact = () => {
             />
           </label>
 
-          <button
+          {/* <button
             type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? "submiting..." : "send"}
-          </button>
+          </button> */}
+
+
+          <div className="relative group cursor-pointer w-fit">
+            <div className={`bg-gradient-to-r from-[#915eff] to-[#7c3aed] p-[1px] rounded-xl transform transition-all duration-300 ${loading ? 'animate-pulse' : 'group-hover:scale-105 group-active:scale-95'} group-hover:shadow-lg group-hover:shadow-[#915eff]/50`}>
+              <button
+                type="submit"
+                disabled={loading}
+                className="relative bg-tertiary rounded-xl overflow-hidden py-3 px-8 outline-none w-fit text-white font-bold transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#915eff]/10 group-hover:to-[#7c3aed]/10 disabled:opacity-70 disabled:cursor-not-allowed"
+              >
+                {/* Shimmer effect */}
+                {!loading && (
+                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+                )}
+
+                {/* Loading background */}
+                {loading && (
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#915eff]/20 to-[#7c3aed]/20"></div>
+                )}
+
+                {/* Content container */}
+                <div className="relative z-10 flex items-center justify-center gap-2">
+                  {/* Loading spinner */}
+                  {loading && (
+                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                  )}
+
+                  <span className="transition-all duration-200">
+                    {loading ? "Submitting..." : "Send"}
+                  </span>
+                </div>
+              </button>
+            </div>
+          </div>
+
         </form>
       </motion.div>
       <div className="flex justify-center items-center xl:flex-1">
